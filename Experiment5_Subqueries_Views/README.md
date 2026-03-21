@@ -317,3 +317,8 @@ WHERE CUSTOMER_ID=3007);
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
+
+## Module seb:
+
+<img width="784" height="100" alt="image" src="https://github.com/user-attachments/assets/75219f82-15d2-45f1-a3b3-7377868e7b03" />
+
