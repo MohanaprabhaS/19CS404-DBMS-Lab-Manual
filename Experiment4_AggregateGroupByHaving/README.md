@@ -218,3 +218,8 @@ HAVING AVG(workhour) BETWEEN 10 AND 12;
 <img width="623" height="365" alt="image" src="https://github.com/user-attachments/assets/c08f5640-4ae5-4b02-b548-8955960b578b" />
 
 
+## RESULT:
+
+Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully
+
+
