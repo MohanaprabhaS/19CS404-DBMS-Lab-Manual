@@ -104,6 +104,7 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
+
 Insert a book with ISBN 978-1234567890, Title Data Science Essentials, Author Jane Doe, Publisher TechBooks, and Year 2024 into the Books table.
 
 ## Code:
@@ -117,6 +118,7 @@ VALUES("978-1234567890","Data Science Essentials","Jane Doe","TechBooks",2024);
 
 
 **Question 2**
+
 Insert all customers from Old_customers into Customers
 
 Table attributes are CustomerID, Name, Address, Email
@@ -141,6 +143,7 @@ VALUES('303',"David Wilson","789 Pine Road","david.w@example.com");
 
 
 **Question 3**
+
 Create a table named ProjectAssignments with the following constraints: AssignmentID as INTEGER should be the primary key. EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID). ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID). AssignmentDate as DATE should be NOT NULL.
 
 ## Code:
@@ -161,6 +164,7 @@ foreign key (ProjectID) references Projects(ProjectID)
 
 
 **Question 4**
+
 Create a table named Products with the following constraints: ProductID as INTEGER should be the primary key. ProductName as TEXT should be unique and not NULL. Price as REAL should be greater than 0. StockQuantity as INTEGER should be non-negative.
 
 ## Code:
@@ -180,6 +184,7 @@ StockQuantity INTEGER CHECK(StockQuantity>0)
 
 
 **Question 5**
+
 Write a SQL query to modify the Student_details table by adding a new column Email of type VARCHAR(50) and updating the column MARKS to have a default value of 0.
 
 ## Code:
@@ -196,6 +201,7 @@ ADD COLUMN MARKS INTEGER DEFAULT 0;
 <img width="838" height="95" alt="image" src="https://github.com/user-attachments/assets/4612ade6-b119-483d-8d74-93b7f990a9bd" />
 
 **Question 6**
+
 Write a SQL query to Rename the "city" column to "location" in the "customer" table.
 
 ## Code:
@@ -209,6 +215,7 @@ RENAME COLUMN city to location;
 
 
 **Question 7**
+
 Insert the following students into the Student_details table: RollNo Name Gender Subject MARKS
 
 202 Ella King F Chemistry 87 203 James Bond M Literature 78
@@ -228,6 +235,7 @@ VALUES(203,"James Bond","M","Literature",78);
 
 
 **Question 8**
+
 Create a new table named item with the following specifications and constraints: item_id as TEXT and as primary key. item_desc as TEXT. rate as INTEGER. icom_id as TEXT with a length of 4. icom_id is a foreign key referencing com_id in the company table. The foreign key should cascade updates and deletes. item_desc and rate should not accept NULL.
 
 ## Code:
@@ -248,6 +256,7 @@ foreign key (icom_id) references company(com_id) ON UPDATE CASCADE ON DELETE CAS
 
 
 **Question 9**
+
 Create a table named Orders with the following columns:
 
 OrderID as INTEGER OrderDate as TEXT CustomerID as INTEGER
@@ -268,6 +277,7 @@ CustomerID INTEGER
 
 
 **Question 10**
+
 Create a table named Invoices with the following constraints:
 
 InvoiceID as INTEGER should be the primary key. InvoiceDate as DATE. DueDate as DATE should be greater than the InvoiceDate. Amount as REAL should be greater than 0.
